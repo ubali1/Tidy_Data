@@ -4,7 +4,7 @@ The script consolidates the data from the test and train datasets and extracts o
 
 All data sets are in the main directory. After running the script 'run_analysis.R' in the home directory, the output of the sript can be viewed using RStudios as follows: 
 
-View(read.table("./summary_data.csv", header = TRUE, sep = ","))
+View(read.table("./summary_data.txt", header = TRUE, sep = ","))
 
 ==================================================================
 
