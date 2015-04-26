@@ -58,8 +58,8 @@ mergeData_subset$activity[which(mergeData_subset$activity == "6")] <- "LAYING"
 summary_data <- mergeData_subset %>% group_by(subject, activity) %>% summarise_each(funs(mean), vars=-(activity))
 
 ## Write the summary_data into home directory as a *.csv file with same name
-write.table(summary_data, file = "./summary_data.csv", sep = ",", row.names = FALSE)
+write.table(summary_data, file = "./summary_data.txt", sep = ",", row.names = FALSE)
 
 ## Use the following code to view the summary_data in RStudio
-## View(read.table("./summary_data.csv", header = TRUE, sep = ","))
+## View(read.table("./summary_data.txt", header = TRUE, sep = ","))
 
